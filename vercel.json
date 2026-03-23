@@ -1,15 +1,11 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/mepar.py",
-      "use": "@vercel/python"
-    }
+  "rewrites": [
+    { "source": "/api/mepar", "destination": "/api/mepar.py" }
   ],
-  "routes": [
-    {
-      "src": "/api/mepar",
-      "dest": "api/mepar.py"
+  "functions": {
+    "api/mepar.py": {
+      "runtime": "@vercel/python"
     }
-  ]
+  }
 }
