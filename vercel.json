@@ -1,11 +1,9 @@
 {
   "version": 2,
   "rewrites": [
-    { "source": "/api/mepar", "destination": "/api/mepar.py" }
-  ],
-  "functions": {
-    "api/mepar.py": {
-      "runtime": "@vercel/python"
+    {
+      "source": "/api/mepar",
+      "destination": "/api/mepar.py"
     }
-  }
+  ]
 }
